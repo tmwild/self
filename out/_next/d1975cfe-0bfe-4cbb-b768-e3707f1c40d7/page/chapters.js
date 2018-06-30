@@ -1,1 +1,0 @@
-module.exports=__NEXT_REGISTER_PAGE("/chapters",function(){var e=webpackJsonp([6],{203:function(e,n,t){e.exports=t(204)},204:function(e,n){}},[203]);return{page:e.default}});

@@ -1,4 +1,6 @@
 module.exports = {
+    assetPrefix: '/self/out',
+
     exportPathMap: function () {
       return {
         '/': { page: '/' },
