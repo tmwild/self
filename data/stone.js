@@ -1,5 +1,0 @@
-export default {
-    truths: [`Life isn't fair`, `Success requires work`, `Happiness is a decision`, `There are no quarantees`, `Goalposts move sometimes`, `There is variance to everything`],
-    values: [`Being productive makes you feel fulfilled`, `Family comes first`, `Exercise improves everything`, `Keeping tidy is healthy for the mind`],
-    life: 'Stay healthy, stay productive, enjoy life as much as possible and help others to do the same.',
-}

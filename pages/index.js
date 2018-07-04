@@ -29,9 +29,9 @@ const Page = (props) => (
 Page.getInitialProps = async function() {
 
   return {
-    goals: Goals,
-    stone: Stone,
-    logs: Logs.reverse()
+    goals: Goals.data,
+    stone: Stone.data[0],
+    logs: Logs.data.reverse()
   }
 }
 

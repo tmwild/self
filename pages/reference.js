@@ -1,8 +1,7 @@
 import Layout from '../components/Layout'
-import Link from 'next/link'
 import SiteHead from '../components/SiteHead'
 
-import {chapters, exercises} from '../data/reference'
+import reference from '../data/reference'
 
 
 const Page = (props) => (
@@ -40,8 +39,7 @@ const Page = (props) => (
 
 Page.getInitialProps = async function(context) {
     return {
-        chapters: chapters,
-        exercises: exercises
+        chapters: reference.data
     }
 }
 

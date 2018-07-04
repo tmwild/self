@@ -1,7 +1,7 @@
-import Layout from '../components/Layout.js'
-import SiteHead from '../components/SiteHead.js';
+import Layout from '../components/Layout'
+import SiteHead from '../components/SiteHead'
 
-import Logs from '../data/logs.js'
+import Logs from '../data/logs'
 
 
 const Page = (props) => (
@@ -42,14 +42,14 @@ const Page = (props) => (
 Page.getInitialProps = async function(context) {
     const { id } = context.query
 
-    Logs.reverse()
+    Logs.data.reverse()
 
-    let currentLog = Logs.filter(log => log.id === id)
+    let currentLog = Logs.data.filter(log => log.id === id)
 
-    currentLog.length === 1 ? currentLog = currentLog[0] : currentLog = Logs[0];
+    currentLog.length === 1 ? currentLog = currentLog[0] : currentLog = Logs.data[0];
 
     return {
-        logs: Logs,
+        logs: Logs.data,
         current: currentLog
     }
 }
