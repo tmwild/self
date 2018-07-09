@@ -24,8 +24,8 @@ const Header = (props) => (
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/goals">
-                <a className={props.currentPage === 'goals' ? 'active nav-link' : 'nav-link'}>Goals</a>
+              <Link href="/dreams">
+                <a className={props.currentPage === 'dreams' ? 'active nav-link' : 'nav-link'}>Dreams</a>
               </Link>
             </li>
             <li className="nav-item">

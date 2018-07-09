@@ -1,9 +1,9 @@
 import Layout from '../components/Layout'
-import ListGoals from '../components/ListGoals'
+import ListDreams from '../components/ListDreams'
 import ListLogs from '../components/ListLogs'
 import StoneOfLife from '../components/StoneOfLife'
 
-import Goals from '../data/goals'
+import Dreams from '../data/dreams'
 import Stone from '../data/stone'
 import Logs from '../data/logs'
 
@@ -14,7 +14,7 @@ const Page = (props) => (
 
     <div className="row">
         <div className="col-12 col-lg-8">
-            <ListGoals goals={props.goals} />
+            <ListDreams dreams={props.dreams} />
             <ListLogs logs={props.logs} />
         </div>
 
@@ -28,10 +28,20 @@ const Page = (props) => (
 
 Page.getInitialProps = async function() {
 
+  const LogsArr = Logs.data.sort(function (a, b) {
+    let comparison = 0;
+    if (a.id < b.id) {
+      comparison = 1;
+    } else {
+      comparison = -1;
+    }
+    return comparison;
+  })
+
   return {
-    goals: Goals.data,
+    dreams: Dreams.data,
     stone: Stone.data[0],
-    logs: Logs.data.reverse()
+    logs: LogsArr
   }
 }
 

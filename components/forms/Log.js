@@ -41,7 +41,7 @@ class LogForm extends React.Component {
         <React.Fragment>
         <p>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#logForm" aria-expanded="false" aria-controls="logForm">
-                New log
+                Add Daily Log
             </button>
         </p>
         <div class="collapse mb-3" id="logForm">

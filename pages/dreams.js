@@ -1,14 +1,15 @@
 import Layout from '../components/Layout'
-import ListGoals from '../components/ListGoals'
+import ListDreams from '../components/ListDreams'
 import SiteHead from '../components/SiteHead'
+import DreamInfo from '../components/DreamInfo'
 
-import Goals from '../data/goals'
+import Dreams from '../data/dreams'
 
 const Page = (props) => (
-  <Layout currentPage="goals">
+  <Layout currentPage="dreams">
     <SiteHead />
     <div className="row">
-        <div className="col-12 mb-0 mt-4">
+        <div className="col-12 col-lg-8 mb-0 mt-4">
             <h2>{props.current.name}</h2>
             
             <p className="lead">{props.current.description}</p>
@@ -22,12 +23,14 @@ const Page = (props) => (
                         <p className="card-header">{stone.title}</p>
                         <div className="card-body">
                         <div className="progress">
-                            <div className="progress-bar progress-bar-striped bg-dark" role="progressbar" style={{width: stone.status + '%'}} aria-valuenow={stone.status} aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="progress-bar bg-success" role="progressbar" style={{width: stone.status + '%'}} aria-valuenow={stone.status} aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         </div>
                     </div>
                 ))}
             </div>
+
+            <h4 className="mt-5">Targets</h4>
 
             <table className="table table-borderless">
                 <thead>
@@ -50,8 +53,9 @@ const Page = (props) => (
                 </table>
         </div>
 
-        <div className="col-12 mb-0 mt-4 mb-5">
-            <ListGoals goals={props.goals} />
+        <div className="col-12 col-lg-4 mb-0 mt-4 mb-5">
+            <DreamInfo />
+            <ListDreams dreams={props.dreams} />
         </div>
 
     </div>
@@ -62,13 +66,13 @@ const Page = (props) => (
 Page.getInitialProps = async function(context) {
     const { id } = context.query
 
-    let currentGoal = Goals.data.filter(goal => goal.id === id)
+    let currentDream = Dreams.data.filter(dream => dream.id === id)
 
-    currentGoal.length === 1 ? currentGoal = currentGoal[0] : currentGoal = Goals.data[0];
+    currentDream.length === 1 ? currentDream = currentDream[0] : currentDream = Dreams.data[0];
 
     return {
-        goals: Goals.data,
-        current: currentGoal
+        dreams: Dreams.data,
+        current: currentDream
     }
 }
 

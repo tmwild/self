@@ -16,8 +16,8 @@ app.prepare()
 
 
 // Dynamic Pages
-  server.get('/goals/:id', (req, res) => {
-    const actualPage = '/goals'
+  server.get('/dreams/:id', (req, res) => {
+    const actualPage = '/dreams'
     const queryParams = { id: req.params.id }
     app.render(req, res, actualPage, queryParams)
   })
@@ -44,14 +44,9 @@ app.prepare()
 
 // API - Add
   server.post('/api/add/:name', (req, res) => {
-      const options = {root: `${__dirname}/data/`}
       const fileName = `${req.params.name}.json`
       const rawData = fs.readFileSync(`${__dirname}/data/${fileName}`)
       let data = JSON.parse(rawData)
-
-      if (!req.body) {
-          console.log('no body')
-      }
 
       data.data.push(req.body)
       data = JSON.stringify(data)
