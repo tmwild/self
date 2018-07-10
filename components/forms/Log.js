@@ -40,12 +40,12 @@ class LogForm extends React.Component {
       return (
         <React.Fragment>
         <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#logForm" aria-expanded="false" aria-controls="logForm">
+            <button className="btn btn-primary" type="button" data-toggle="collapse" data-target="#logForm" aria-expanded="false" aria-controls="logForm">
                 Add Daily Log
             </button>
         </p>
-        <div class="collapse mb-3" id="logForm">
-            <div class="card card-body">
+        <div className="collapse mb-3" id="logForm">
+            <div className="card card-body">
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group row">
                         <label htmlFor="behaviour" className="col-sm-2 col-form-label">Behaviour:</label>

@@ -3,7 +3,7 @@ const StoneOfLife = (props) => (
 
     <div className="card bg-light mb-3 mt-4">
         
-        <div className="card-header">Mindset Makeup</div>
+        <div className="card-header">The Stone of Life</div>
         
         <div className="card-body">
             <h5>Truths</h5>
