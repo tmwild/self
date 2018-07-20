@@ -15,14 +15,14 @@ const Page = (props) => (
   <Layout currentPage="home">
 
     <div className="row">
-        <div className="col-12 col-lg-8">
+        <div className="col-12 col-lg-9">
             <ListDailyTasks dailyTasks={props.dailyTasks} />
             <ListWeeklyTasks weeklyTasks={props.weeklyTasks} />
             <ListDreams dreams={props.dreams} />
             <ListLogs logs={props.logs} />
         </div>
 
-        <div className="col-12 col-lg-4">
+        <div className="col-12 col-lg-3">
             <StoneOfLife stone={props.stone} />
         </div>
     </div>
@@ -46,10 +46,10 @@ Page.getInitialProps = async function() {
   // filter dreams for daily/weekly tasks
   let weeklyTasks = []
   let dailyTasks = []
+  let taskDate, currentWeek, taskWeek
   const currentDate = new Date()
   const onejan = new Date(currentDate.getFullYear(), 0, 1)
   const dateOpts = { day: '2-digit', month: '2-digit',  year: 'numeric' }
-  let taskDate, currentWeek, taskWeek
 
   // always start with a plan
   dailyTasks.push({due: currentDate.toLocaleDateString('en-GB', dateOpts), description: "Plan the day", reward: "Coffee", stone: "q3-log", status: 0})

@@ -9,7 +9,7 @@ const Page = (props) => (
   <Layout currentPage="dreams">
     <SiteHead />
     <div className="row">
-        <div className="col-12 col-lg-8 mb-0 mt-4">
+        <div className="col-12 col-lg-9 mb-0 mt-4">
             <h2>{props.current.name}</h2>
             
             <p className="lead">{props.current.description}</p>
@@ -37,7 +37,7 @@ const Page = (props) => (
                         </tr>
                     ))}
                 </tbody>
-                </table>
+            </table>
 
             <h4 className="mt-5">Foundation Stones</h4>
 
@@ -57,7 +57,7 @@ const Page = (props) => (
 
         </div>
 
-        <div className="col-12 col-lg-4 mb-0 mt-4 mb-5">
+        <div className="col-12 col-lg-3 mb-0 mt-4 mb-5">
             <DreamInfo />
             <ListDreams dreams={props.dreams} />
         </div>

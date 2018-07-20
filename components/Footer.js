@@ -10,7 +10,7 @@ class Footer extends React.Component {
     <nav className="navbar navbar-expand-sm navbar-dark bg-info mt-5">
       <div className="container">
 
-        <div className="navbar-collapse collapse justify-content-end" id="navbarsExample04">
+        <div className="navbar justify-content-end">
           <ul className="navbar-nav mr-1">
             <li className="nav-item">
               <Link href="/">

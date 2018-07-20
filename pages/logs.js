@@ -10,7 +10,7 @@ const Page = (props) => (
   <Layout currentPage="logs">
     <SiteHead />
     <div className="row">
-        <div className="col-12 col-lg-8 mt-4">
+        <div className="col-12 col-lg-9 mt-4">
 
             <LogForm />
             
@@ -27,7 +27,7 @@ const Page = (props) => (
                 </div>
             ))}
         </div>
-        <div className="col-12 col-lg-4">
+        <div className="col-12 col-lg-3">
             <Tips />
         </div>
     </div>
