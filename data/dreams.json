@@ -1,5 +1,66 @@
 {"data" : [
     {
+        "name": "Quarter 3: Exceed Expectations",
+        "id": "Q3-2-Rating",
+        "deadline": "01/10/2018",
+        "description": "Achieve a 2 rating for Q3 2018",
+        "foundationStones": [
+            {
+                "id": "q3-mentor",
+                "title": "Dev Mentorship Program",
+                "description": "Gather understanding of current program and get involved.",
+                "status": 15
+            }, {
+                "id": "q3-rollouts",
+                "title": "Rollouts",
+                "description": "Perform weekly rollouts.",
+                "status": 10
+            }, {
+                "id": "q3-chimp",
+                "title": "Chimp Paradox Site",
+                "description": "Finish chimp paradox website and use daily.",
+                "status": 70
+            }, {
+                "id": "q3-velo",
+                "title": "Improve Team Velocity",
+                "description": "Take ownership of development of tasks and see them through to completion.",
+                "status": 20
+            }, {
+                "id": "q3-logs",
+                "title": "Consistent Logging",
+                "description": "Make daily logs and condense them into weekly reviews which get added to B.Productive.",
+                "status": 20
+            }
+        ],
+        "tasks": [{
+                "due": "07/20/2018",
+                "description": "2 Chimp backlog items",
+                "reward": "Pea protein bars",
+                "stone": "q3-chimp",
+                "status": 0
+            },{
+                "due": "07/24/2018",
+                "description": "Admin rollout",
+                "reward": "Cocoa bean bar",
+                "stone": "q3-rollouts",
+                "status": 0
+            }, {
+                "due": "07/20/2018",
+                "description": "Develop a dev mentorship plan",
+                "reward": "30 litre backpack",
+                "stone": "q3-mentor",
+                "status": 0
+            }, {
+                "due": "07/27/2018",
+                "description": "Log the good and bad from this week in B.Productive",
+                "reward": "Beer",
+                "stone": "q3-logs",
+                "status": 0
+            }],
+        "status": "open"
+
+    },
+    {
         "name": "Senior Developer",
         "id": "senior",
         "deadline": "No deadline",

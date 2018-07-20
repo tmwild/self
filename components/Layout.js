@@ -1,5 +1,6 @@
 import Header from './Header'
 import SiteHead from '../components/SiteHead'
+import Footer from '../components/Footer'
 
 const Layout = (props) => (
   <div>
@@ -9,6 +10,8 @@ const Layout = (props) => (
     <div className="container">
       {props.children}
     </div>
+
+    <Footer />
   </div>
 )
 

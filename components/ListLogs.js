@@ -7,7 +7,7 @@ const ListLogs = (props) => (
             <div className="list-group-flush">
             {props.logs.map((log) => (
                 <Link as={`/logs/${log.id}`} href={`/logs?id=${log.id}`} key={log.id}>
-                    <a className="list-group-item list-group-item-action">{ new Date(parseInt(log.id)*1000).toLocaleDateString('en-GB', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }) }: {log.behaviour.substring(0,50)}</a>
+                    <a className="list-group-item list-group-item-action">{ new Date(parseInt(log.id)*1000).toLocaleDateString('en-GB', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' }) }: {log.behaviour.substring(0,50)}...</a>
                 </Link>
             ))}
             </div>
