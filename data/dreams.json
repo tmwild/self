@@ -33,7 +33,7 @@
             }
         ],
         "tasks": [{
-                "due": "07/20/2018",
+                "due": "07/23/2018",
                 "description": "2 Chimp backlog items",
                 "reward": "Pea protein bars",
                 "stone": "q3-chimp",
@@ -45,7 +45,7 @@
                 "stone": "q3-rollouts",
                 "status": 0
             }, {
-                "due": "07/20/2018",
+                "due": "07/25/2018",
                 "description": "Develop a dev mentorship plan",
                 "reward": "30 litre backpack",
                 "stone": "q3-mentor",

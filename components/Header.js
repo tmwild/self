@@ -4,7 +4,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    const emojis = [`🐵`, `🙈`, `🙊`, `🙉`, `🍌`]
+    const emojis = [`🐵`, `🙈`, `🙊`, `🙉`]
     this.emoji = emojis[Math.floor(Math.random() * 4) + 1]
   }
 
